@@ -610,7 +610,8 @@
     "zwitch": "^1.0.5"
   },
   "devDependencies": {
-    "hint": "^7.1.0"
+    "hint": "^7.1.0",
+    "html-webpack-plugin": "^5.5.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
