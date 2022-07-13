@@ -1,0 +1,38 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 30%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+  margin: 50px;
+  border: 1px solid whitesmoke;
+  align-self: center;
+}
+
+.item {
+  padding: 3%;
+  border-bottom: 0.8px solid wheat;
+}
+
+.container input[type='text'] {
+  width: 98%;
+  height: 50px;
+  font-style: italic;
+  border-top: 0.8px solid lightgray;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.6px solid lightgray;
+}
+
+h4 {
+  padding-left: 10px;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  padding-top: 10px;
+  background-color: lightgrey;
+}
