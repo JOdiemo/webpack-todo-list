@@ -1,7 +1,7 @@
 import './style.css';
 
 const todosList = [
-  { description: 'wash the dishes', completed: false, index: 1},
+  { description: 'wash the dishes', completed: false, index: 1 },
   { description: 'complete To Do List project', completed: false, index: 2 },
 ];
 
