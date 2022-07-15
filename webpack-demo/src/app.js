@@ -29,8 +29,8 @@ const myList = (myList) => {
   const todosContent = document.querySelectorAll('.itemTodo');
   todosContent.forEach((todoArray) => {
     todoArray.addEventListener('change', (e) => {
-       todoArray.editList(Number(e.target.id), e.target.value);
-   });
+      todoArray.editList(Number(e.target.id), e.target.value);
+    });
   });
 
   const todoCheckBox = document.querySelectorAll('.todoCheck');
