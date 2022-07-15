@@ -13,11 +13,11 @@ export default class ThingsTodo {
   }
 
   deleteList(deleteID) {
-    this.list = this.list.filter((todoArray) => todoArray.index !== deleteID);
-    this.list.forEach((todoArray, index) => {
-      todoArray.index = index + 1;
+      this.list = this.list.filter((lsList) => lsList.index !== deleteID);
+      this.list.forEach((lsList, index) => {
+      lsList.index = index + 1;
     });
-    localStorage.setItem('todoList', JSON.stringify(this.list));
+      localStorage.setItem('todoList', JSON.stringify(this.list));
   }
 
   editList(editId, newDescription) {
@@ -29,4 +29,5 @@ export default class ThingsTodo {
     });
     localStorage.setItem('todoList', JSON.stringify(newTodoDesc));
   }
+
 }
