@@ -1,6 +1,6 @@
-export default class thingsTodo {
+export default class ThingsTodo {
   constructor() {
-    if (localStorage.getItem('todoList')){
+    if (localStorage.getItem('todoList')) {
       this.list = JSON.parse(localStorage.getItem('todoList'));
     } else {
       this.list = [];

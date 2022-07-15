@@ -1,8 +1,8 @@
 import './style.css';
 import myList from './app.js';
-import thingsTodo from './todolist.js';
+import ThingsTodo from './todolist.js';
 
-const todoArray = new thingsTodo();
+const todoArray = new ThingsTodo();
 myList(todoArray);
 
 const addTodoBtn = document.querySelector('.addButton');

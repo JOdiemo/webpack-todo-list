@@ -28,13 +28,13 @@ const myList = (myList) => {
   // edit
   const todosContent = document.querySelectorAll('.itemTodo');
   todosContent.forEach((todoArray) => {
-    todoArray.addEventListener('change', (e) => {
-       todoArray.editList(Number(e.target.id), e.target.value);
-    });
+   todoArray.addEventListener('change', (e) => {
+      todoArray.editList(Number(e.target.id), e.target.value);
+   });
   });
 
   const todoCheckBox = document.querySelectorAll('.todoCheck');
-  todoCheckBox .forEach((todoArray) => {
+  todoCheckBox.forEach((todoArray) => {
     todoArray.addEventListener('change', (e) => {
       todoArray.checkList(Number(e.target.id), e.target.value);
     });
