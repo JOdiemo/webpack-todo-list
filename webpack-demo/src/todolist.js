@@ -21,7 +21,7 @@ export default class thingsTodo {
   }
 
   editList(editId, newDescription) {
-    const newTodoDesc = this.list.map((todo) => {
+    const newTodoDesc = this.list.map((todoArray) => {
       if (todoArray.index === editId) {
         return { ...todoArray, description: newDescription };
       }

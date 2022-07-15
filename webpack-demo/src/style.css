@@ -59,11 +59,6 @@ h4 {
   align-items: center;
 }
 
-.box :second -child {
-margin-left: 0;
-}
-
-
 .clear {
   display: flex;
   justify-content: center;
