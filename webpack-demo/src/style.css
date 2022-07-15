@@ -3,11 +3,21 @@
 }
 
 .container {
-  max-width: 30%;
+  max-width: 40%;
   box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
   margin: 50px;
   border: 1px solid whitesmoke;
   align-self: center;
+}
+
+form {
+  display: flex;
+  padding-right: 0;
+  position: relative;
+  border-top: 0.6px solid rgb(216, 216, 216);
+  border-right: none;
+  border-bottom: 0.6px solid rgb(216, 216, 216);
+  border-left: none;
 }
 
 .item {
@@ -15,19 +25,44 @@
   border-bottom: 0.8px solid wheat;
 }
 
-.container input[type='text'] {
-  width: 98%;
+.todoInput {
+  width: 90%;
   height: 50px;
   font-style: italic;
-  border-top: 0.8px solid lightgray;
+  border-top: 0.6px solid lightgray;
   border-right: none;
   border-left: none;
+}
+
+.itemTodo {
+  width: 100%;
+  height: 50px;
   border-bottom: 0.6px solid lightgray;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 h4 {
   padding-left: 10px;
 }
+
+.delButton,
+.addButton {
+  height: 55px;
+  width: 50px;
+}
+
+.todoItem {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+}
+
+.box :second -child {
+margin-left: 0;
+}
+
 
 .clear {
   display: flex;

@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wbpack Exercise</title>
-<script defer src="main.bundle.js"></script></head>
+    <title>List of Things to do</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="main.bundle.js"></script></head>
 
 <body>
     <div class="container">
-        <h4 class="title">Today's To do</h4>
-        <input type="text" placeholder="Add List Items."/>
-        <div class="todos">
-            <!-- Add list dynamicaly /src/index.js -->
+        <h4 class="title">My To-do List</h4>
+        <form>
+            <input class="todoInput" type="text" placeholder="Add to your List..." autofocus />
+            <button class="addButton">
+                <i class="fa-solid fa-arrows-rotate fa-icon"></i>
+            </button>
+        </form>
+        <div class="item">
+            <!-- Dynamically insered Index.js -->
         </div>
         <div class="clear">
-            <a>Clear All Completed</a>
+            <a>Clear All</a>
         </div>
     </div>
 </body>
