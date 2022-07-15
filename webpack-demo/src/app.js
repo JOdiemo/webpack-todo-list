@@ -29,14 +29,14 @@ const myList = (myList) => {
   const todosContent = document.querySelectorAll('.itemTodo');
   todosContent.forEach((todoArray) => {
     todoArray.addEventListener('change', (e) => {
-       todo.editList(Number(e.target.id), e.target.value);
+       todoArray.editList(Number(e.target.id), e.target.value);
     });
   });
 
   const todoCheckBox = document.querySelectorAll('.todoCheck');
   todoCheckBox .forEach((todoArray) => {
     todoArray.addEventListener('change', (e) => {
-      todo.checkList(Number(e.target.id), e.target.value);
+      todoArray.checkList(Number(e.target.id), e.target.value);
     });
   });
 };

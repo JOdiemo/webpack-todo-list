@@ -1,8 +1,8 @@
 export default class thingsTodo {
   constructor() {
     if (localStorage.getItem('todoList')){
-      this.list = JSON.parse(localStorage.getItem('todoList'))
-    } else{
+      this.list = JSON.parse(localStorage.getItem('todoList'));
+    } else {
       this.list = [];
     }
   }
@@ -25,7 +25,7 @@ export default class thingsTodo {
       if (todoArray.index === editId) {
         return { ...todoArray, description: newDescription };
       }
-      return todo;
+      return todoArray;
     });
     localStorage.setItem('todoList', JSON.stringify(newTodoDesc));
   }

@@ -7,7 +7,6 @@ myList(todoArray);
 
 const addTodoBtn = document.querySelector('.addButton');
 addTodoBtn.addEventListener('click', () => {
-
   const description = document.querySelector('.todoInput').value.trim();
   const completed = false;
   const index = todoArray.list.length + 1;
@@ -17,4 +16,3 @@ addTodoBtn.addEventListener('click', () => {
     myList(todoArray);
   }
 });
-
