@@ -21,9 +21,11 @@ const myList = (mytodoList) => {
     btn.addEventListener('click', (e) => {
       const element = btn.parentNode;
       element.remove();
-      mytodoList.deleteList(Number(e.target.parentNode.id));
-      // element.remove();
-    });
+      myList.deleteList(Number(e.target.parentNode.id));
+      window.location.reload(myList);
+      localStorage.setItem('todoList', JSON.stringify(this.list));
+      // // element.remove();
+     });
   });
 
   // edit
