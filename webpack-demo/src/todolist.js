@@ -1,33 +1,44 @@
-export default class ThingsTodo {
+export default class Todos {
   constructor() {
-    if (localStorage.getItem('todoList')) {
-      this.list = JSON.parse(localStorage.getItem('todoList'));
-    } else {
-      this.list = [];
-    }
+    this.list = localStorage.getItem('todoItems')
+      ? JSON.parse(localStorage.getItem('todoItems'))
+      : [];
   }
 
-  addList(lsList) {
-    this.list.push(lsList);
-    localStorage.setItem('todoList', JSON.stringify(this.list));
+  addItems(todo) {
+    this.list.push(todo);
+    localStorage.setItem('todoItems', JSON.stringify(this.list));
   }
 
-  deleteList(deleteID) {
-      this.list = this.list.filter((lsList) => lsList.index !== deleteID);
-      this.list.forEach((lsList, index) => {
-      lsList.index = index + 1;
+  removeItems(todoID) {
+    this.list = this.list.filter((todo) => todo.id !== todoID);
+    this.list.forEach((todo, index) => {
+      todo.index = index + 1;
     });
-      localStorage.setItem('todoList', JSON.stringify(this.list));
+    localStorage.setItem('todoItems', JSON.stringify(this.list));
   }
 
-  editList(editId, newDescription) {
-    const newTodoDesc = this.list.map((todoArray) => {
-      if (todoArray.index === editId) {
-        return { ...todoArray, description: newDescription };
+  editTodo(todoId, todoDescription) {
+    this.list = this.list.map((todo) => {
+      if (todo.id === todoId) {
+        return { ...todo, description: todoDescription };
       }
-      return todoArray;
+      return todo;
     });
-    localStorage.setItem('todoList', JSON.stringify(newTodoDesc));
+    localStorage.setItem('todoItems', JSON.stringify(this.list));
   }
 
+  completeTodo(todoId, status) {
+    const selected = this.list.findIndex((element) => element.id === todoId);
+    this.list[selected].completed = status;
+    localStorage.setItem('todoItems', JSON.stringify(this.list));
+  }
+
+  clearCompletedTodos() {
+    this.list = this.list.filter((todo) => !todo.completed);
+    this.list.forEach((todo, index) => {
+      todo.index = index + 1;
+    });
+    localStorage.setItem('todoItems', JSON.stringify(this.list));
+  }
 }

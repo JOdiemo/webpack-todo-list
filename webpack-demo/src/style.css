@@ -2,12 +2,19 @@
   font-family: sans-serif;
 }
 
+body {
+  align-items: center;
+}
+
 .container {
   max-width: 40%;
   box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
-  margin: 50px;
   border: 1px solid whitesmoke;
-  align-self: center;
+  margin: 50px auto;
+}
+
+.title {
+  padding-left: 10px;
 }
 
 form {
@@ -20,9 +27,12 @@ form {
   border-left: none;
 }
 
-.item {
+.items {
   padding: 3%;
-  border-bottom: 0.8px solid wheat;
+  border-bottom: 0.6px solid rgb(216, 216, 216);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .todoInput {
@@ -34,7 +44,7 @@ form {
   border-left: none;
 }
 
-.itemTodo {
+.description {
   width: 100%;
   height: 50px;
   border-bottom: 0.6px solid lightgray;
@@ -43,25 +53,26 @@ form {
   border-left: none;
 }
 
+.edit {
+  width: 80%;
+  height: 50px;
+  border: none;
+}
+
 h3 {
   padding-left: 10px;
 }
 
-.delButton,
+.remove-btn,
 .addButton {
   height: 55px;
-  width: 50px;
-}
-
-.todoItem {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  align-items: center;
+  width: 55px;
 }
 
 .clear {
   display: flex;
   justify-content: center;
+  padding: 3%;
   height: 40px;
   padding-top: 10px;
   background-color: lightgrey;
