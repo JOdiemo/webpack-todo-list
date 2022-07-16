@@ -2,6 +2,7 @@
 
 # Project Name
 To Do List
+This project is to create a daily list of things to do. It involes being able to add items to o be done, to remove what has been done and finally to edit an item in case the need arises.
 
 Use webpack to bundle JavaScript.
 Learn how to use proper ES6 syntax.
@@ -46,16 +47,13 @@ To get a local copy up and running follow these simple example steps.
 👤 **Author1**
 
 - GitHub: [@JOdiemo](https://github.com/JOdiemo/)
-- Twitter: [@JorumOdiemo](https://twitter.com/twitterhandle)
+- Twitter: [@JorumOdiemo](https://twitter.com/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorumodiemo/)
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
+Feel free to check the [issues page](../../issues/).git
 ## Show your support
 
 Give a ⭐️ if you like this project!
