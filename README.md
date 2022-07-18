@@ -16,7 +16,7 @@ Use ES6 modules to write modular JavaScript.
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/JOdiemo/webpack-todo-list/tree/todo-list-structure)
+[Live Demo Link](https://jodiemo.github.io/webpack-todo-list/webpack-demo/dist/)
 
 
 ## Getting Started
