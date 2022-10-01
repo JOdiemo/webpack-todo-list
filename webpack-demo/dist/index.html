@@ -4,30 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Todo list</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <meta property="og:image" content="../screen.png">
-    <meta property="og:description"
-        content="This is a Webpack Project about Todo-list which you can add your to-dos, edit them, add mark as completed and store the data in localStorage">
 <script defer src="main.bundle.js"></script></head>
-
 <body>
     <div class="container">
-        <h4 class="title">Today's Todo</h4>
+        <h4 class="title">My Today's To do List</h4>
         <form>
             <input class="description" type="text" placeholder="Add to your List..." autofocus />
             <button class="add-btn">
-                <i class="fas fa-location-arrow"></i>
+                <i class="fa-solid fa-arrows-rotate fa-icon"></i>
             </button>
         </form>
         <div class="todos">
-            <!-- Add Todos Automatically -->
         </div>
         <div class="clear">
             <a class="clear-btn">Clear All</a>
         </div>
     </div>
 </body>
-
 </html>
