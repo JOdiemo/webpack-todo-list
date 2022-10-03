@@ -39,11 +39,17 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
+<<<<<<< HEAD
 - GitHub: [@githubhandle](https://github.com/JOdiemo)
 - Twitter: [@twitterhandle](https://twitter.com/jorumodiemo)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/jorumodiemo)
 
 
+=======
+- GitHub: [@JOdiemo](https://github.com/JOdiemo/)
+- Twitter: [@JorumOdiemo](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorumodiemo/)
+>>>>>>> e1ae21d3a986cdef93dac4afa9b849cf42543377
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
