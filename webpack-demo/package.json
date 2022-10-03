@@ -8,7 +8,7 @@
     "build": "webpack",
     "start": "webpack serve --open"
   },
-  "keywords": [],
+  "keywords": [],"licenses": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {

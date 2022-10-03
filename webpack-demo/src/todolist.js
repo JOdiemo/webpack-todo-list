@@ -7,7 +7,7 @@ export default class Todos {
 
   addItems(todo) {
     this.list.push(todo);
-    localStorage.setItem('todoItems', JSON.stringify(this.list));
+    localStorage.setItem('todoItems', JSON.Stringify(this.list));
   }
 
   removeItems(todoID) {
