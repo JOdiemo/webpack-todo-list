@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@webpack-cli/generators": "^2.5.0",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
@@ -22,12 +25,21 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0"
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "lodash": "^4.17.21"
   },
   "main": "webpack.config.js",
-  "description": ""
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOdiemo/webpack-todo-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JOdiemo/webpack-todo-list/issues"
+  },
+  "homepage": "https://github.com/JOdiemo/webpack-todo-list#readme"
 }

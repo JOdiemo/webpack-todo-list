@@ -1,30 +1,37 @@
 import './style.css';
-import thingsTodo from './app.js';
-import Todos from './todolist.js';
+import { addBtn, input } from './modules/Constants.js';
+import { renderTasks, saveAndRender } from './modules/renderTasks.js';
+import { toggleDisplay, createTask } from './modules/utils.js';
 
-const todosList = new Todos();
-thingsTodo(todosList);
+let tasksArr = [];
+if (localStorage.length > 0) {
+  tasksArr = JSON.parse(localStorage.getItem('list'));
+}
 
-// add todo
-const addBtn = document.querySelector('.add-btn');
+renderTasks(tasksArr);
+
+window.removeTask = (_id) => {
+  const updatedList = tasksArr.filter((task) => task.id !== _id);
+  tasksArr = updatedList;
+  saveAndRender(tasksArr);
+};
+
 addBtn.addEventListener('click', () => {
-  const id = `id${Math.random().toString(10).slice(2, 4)}`;
-  const description = document.querySelector('.description').value.trim();
-  const completed = false;
-  const index = todosList.list.length + 1;
-
-  const newTodo = {
-    id, description, completed, index,
-  };
-  if (description) {
-    todosList.addItems(newTodo);
-    thingsTodo(todosList);
+  if (input.value !== '') {
+    const taskObj = createTask(input.value, tasksArr.length);
+    tasksArr.push(taskObj);
+    saveAndRender(tasksArr);
+    input.value = '';
   }
 });
 
-// clear all completed todos
-const clearBtn = document.querySelector('.clear-btn');
-clearBtn.addEventListener('click', () => {
-  todosList.clearCompletedTodos();
-  thingsTodo(todosList);
-});
+window.editTask = (id) => {
+  const normalDisplay = document.querySelector(`[data-id="${id}"]`).querySelectorAll('.normal-display');
+  const editDisplay = document.querySelector(`[data-id="${id}"]`).querySelectorAll('.edit-display');
+  toggleDisplay(normalDisplay, editDisplay);
+};
+
+window.updateDescription = (id, element) => {
+  tasksArr[id].description = element.value;
+  saveAndRender(tasksArr);
+};

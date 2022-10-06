@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My Todo list</title>
-</head>
-<body>
+    <title>TO-DO-List</title>
+    <script
+      src="https://kit.fontawesome.com/7e86c8c237.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
     <div class="container">
-        <h4 class="title">My Today's To do List</h4>
-        <form>
-            <input class="description" type="text" placeholder="Add to your List..." autofocus />
-            <button class="add-btn">
-                <i class="fa-solid fa-arrows-rotate fa-icon"></i>
-            </button>
-        </form>
-        <div class="todos">
-        </div>
-        <div class="clear">
-            <a class="clear-btn">Clear All</a>
-        </div>
+      <h1 class="title">My To-do-List</h1>
+      <hr class="border" />
+      <div class="input-field">
+        <input type="text" class="add-task" placeholder="Add to your list..." />
+        <i class="fa-solid fa-circle-plus add"></i>
+      </div>
+      <hr class="border" />
+      <div class="tasks-list"></div>
+      <a class="clear">Clear all completed</a>
     </div>
-</body>
+  </body>
 </html>
