@@ -27,11 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-<<<<<<< HEAD
 👤 Jorum Odiemo
-=======
-👤 **Jorum Odiemo**
->>>>>>> 761a85c6715bb6b885f8f04f5cf7dd692183ff69
 
 - GitHub: [@githubhandle](https://github.com/JOdiemo)
 - Twitter: [@twitterhandle](https://twitter.com/jorumodiemo)
