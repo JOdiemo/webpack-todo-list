@@ -1,0 +1,105 @@
+
+* {
+  font-family: sans-serif;
+}
+
+h1 {
+  /* color: rgb(35, 41, 35); */
+  font-style: oblique;
+}
+
+body {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  border: 1px solid rgb(172, 165, 165);
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25%;
+  box-shadow: 20px 20px 50px grey;
+  padding: 5px;
+  border-radius: 2%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.add-task {
+  height: 37px;
+  border: none;
+  flex: 5;
+}
+
+.fa-solid {
+  font-size: 25px;
+}
+
+.add {
+  font-size: 38px;
+}
+
+.border {
+  color: grey;
+  height: 0;
+  width: 100%;
+  opacity: 0.3;
+  margin: 0;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.clear {
+  padding: 15px;
+  text-align: center;
+  background-color: #f3f0eb;
+  text-decoration: underline;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input-field {
+  display: flex;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 8px;
+  height: 52px;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-none {
+  display: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 5% 4%;
+  }
+}
